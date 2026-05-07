@@ -1,31 +1,21 @@
 import random
+ 
 
-while True:
-    guess_number = random.randint(1, 100)
-    attempts = 0
-    max_attempts = 7
-    won = False
+secret_number = random.randint(1, 100)
+attempts = 0
 
-    while attempts < max_attempts:
-        try:
-            guess = int(input("Ente a number: "))
-        except ValueError:
-            print("Please enter a valid number.")
-            continue
-        attempts += 1
-
-        if guess == guess_number:
-            print(f"You guessed the number in {attempts} attempts!")
-            won = True
-            break
-        elif guess < guess_number:
-            print("Too low!")
-        else:
-            print("Too high!")
-
-    if not won:
-        print(f"You didn't guess it. The number was {guess_number}.")
-
+for guess in range(1, 101):
+    attempts += 1
+    print(f"Trying: {guess}")
+    
+    if guess == secret_number:
+        print(f"You guessed the number in {i} attempts!")
+        break
+    elif guess < secret_number:
+        print("Too low!")
+    else:
+        print("Too high!")
+ 
 
     choice = input("Do you want to play again? (y/n): ").lower()
     if choice != "y":
