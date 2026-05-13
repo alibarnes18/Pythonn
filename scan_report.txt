@@ -1,0 +1,8 @@
+Port Tarama Raporu
+------------------
+21 → Kapalı
+22 -> Açık
+80 -> Açık
+443 → Kapalı
+8080 → Kapalı
+9999 → Kapalı
