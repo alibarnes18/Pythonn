@@ -11,3 +11,14 @@ for satir in satirlar:
     ip = re.search(r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}", satir)
     if ip:
         print(ip.group())
+
+
+suspects = []
+
+for satir in satirlar:
+    if "ERROR" in satir:
+        ip = re.search(r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}", satir)
+        if ip:
+            suspects.append(ip.group())
+
+print(f"Suspects IP: {suspects}" )
