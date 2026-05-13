@@ -1,0 +1,4 @@
+Şüpheli IP Raporu
+-----------------
+10.0.0.2 -> 2 kez hata
+172.16.0.9 -> 1 kez hata

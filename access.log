@@ -2,4 +2,5 @@ INFO 192.168.1.1 login success
 ERROR 10.0.0.2 login failed
 INFO 192.168.1.5 logout
 ERROR 172.16.0.9 login failed
-INFO 10.0.0.2 login success
+ERROR 10.0.0.2 login failed
+INFO 172.16.0.9 login success
