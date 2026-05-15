@@ -1,0 +1,11 @@
+Network Anomaly Report
+======================
+
+Şüpheli IP'ler
+10.0.0.2 -> 3 hata
+172.16.0.9 -> 2 hata
+\Port Analizi:
+Port 22 -> Şüpheli
+Port 80 -> Normal
+Port 21 -> Şüpheli
+Port 443 -> Normal
