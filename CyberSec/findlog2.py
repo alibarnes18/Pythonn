@@ -21,4 +21,4 @@ with open("blocked_ips.txt", "w") as f:
     for ip, sayac in hata_sayac.items():
         if sayac >= 3:
             print(f"Brute Force: {ip} -> {sayac} deneme")
-            f.write(f"Brute Force: {ip} -> {sayac} deneme\n")             
+            f.write(f"Brute Force: {ip} -> {sayac} deneme\n") 
