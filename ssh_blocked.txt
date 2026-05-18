@@ -1,0 +1,2 @@
+185.220.101.5 → 5 deneme → hedef: root
+45.33.32.156 → 3 deneme → hedef: admin
