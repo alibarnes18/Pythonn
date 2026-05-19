@@ -1,6 +1,6 @@
 Port Tarama Raporu
 Host: scanme.nmap.org
-tarama süresi:  5.539882 saniye
----------------------------
- 22 (SSH) -> Açık
- 80 (HTTP) -> Açık
+Tarama süresi: 5.52 saniye
+------------------------------
+22 (SSH) → Açık
+80 (HTTP) → Açık
