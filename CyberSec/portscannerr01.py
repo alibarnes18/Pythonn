@@ -14,20 +14,33 @@ servis_map = {
     8080: "HTTP-Alt"
 }
 
+acik_portlar = []
 baslangic = time.time()
 
 for port in portlar:
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.settimeout(1)
     sonuc = sock.connect_ex((host, port))
-    sock.close()
+    
 
     servis = servis_map.get(port, "Bilinmeyen")
 
     if sonuc == 0:
         print(f" {port} ({servis}) → Açık")
+        acik_portlar.append(f" {port} ({servis}) -> Açık")
     else:
         print(f" {port} ({servis}) → Kapalı")
 
 sure = time.time() - baslangic
-print(f"\nTarama süresi: {sure:.2f} saniye")
+
+with open("port_scan_report.txt", "w", encoding = "utf-8") as dosya:
+
+    dosya.write("Port Tarama Raporu\n")
+    dosya.write(f"Host: {host}\n")
+    dosya.write(f"tarama süresi: {sure: .2f} saniye\n")
+    dosya.write("---------------------------\n")
+
+    for veri in acik_portlar:
+        dosya.write(veri + "\n")
+
+print("\nRapor dosyaya yazıldı.")
