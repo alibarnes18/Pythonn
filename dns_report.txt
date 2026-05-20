@@ -1,0 +1,12 @@
+
+A Kayıtları:
+ 142.251.38.238
+
+MX Kayıtları:
+ 10 smtp.google.com.
+
+NS Kayıtları:
+ ns4.google.com.
+ ns2.google.com.
+ ns1.google.com.
+ ns3.google.com.
