@@ -1,0 +1,5 @@
+[+] Bulundu: www.google.com -> 142.251.151.119
+[+] Bulundu: mail.google.com -> 172.217.18.165
+[+] Bulundu: admin.google.com -> 192.178.24.46
+[+] Bulundu: api.google.com -> 172.217.171.68
+[+] Bulundu: blog.google.com -> 172.217.16.137
