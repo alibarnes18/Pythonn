@@ -23,10 +23,6 @@ def dns_sorgula(domain, dosya):
                 hata = f"  [!] {tip} kaydı alınamadı: {e}"
                 print(hata)
                 rapor.write(hata + "\n")  
-
-
-
-
 domain = "google.com"
 dosya = "dns_report.txt"
 
