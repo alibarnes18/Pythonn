@@ -1,0 +1,4 @@
+[!] Port 21 → Bağlantı başarısız (timed out)
+[+] Port 22 → SSH-2.0-OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
+[-] Port 80 → Banner alınamadı
+[!] Port 25 → Bağlantı başarısız (timed out)
