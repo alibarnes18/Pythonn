@@ -4,7 +4,11 @@ from sklearn.tree import DecisionTreeClassifier
 
 kayitlar = []
 
-with open(r"c:\Users\alioz\Downloads\Funda. of Py\CyberSec\network.log", "r") as f:
+from pathlib import Path
+
+_LOG = Path(__file__).resolve().parent / "network.log"
+_FINAL = Path(__file__).resolve().parent / "final_report.txt"
+with open(_LOG, "r") as f:
     for line in f:
         durum = line.split()[0] 
         ip = re.search(r"\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}", line)
@@ -43,7 +47,7 @@ for port, sonuc in zip(test, tahminler):
     print(f"Port {port[0]} → {durum}")
 
 
-with open(r"c:\Users\alioz\Downloads\Funda. of Py\CyberSec\final_report.txt", "w", encoding="utf-8") as f:
+with open(_FINAL, "w", encoding="utf-8") as f:
     f.write("Network Anomaly Report\n")
     f.write("======================\n\n")
 

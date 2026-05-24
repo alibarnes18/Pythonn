@@ -11,7 +11,10 @@ satirlar = [
     "INFO 192.168.1.1 80 logout\n",
 ]
 
-with open(r"c:\Users\alioz\Downloads\Funda. of Py\CyberSec\network.log", "w") as f:
+from pathlib import Path
+
+_LOG = Path(__file__).resolve().parent / "network.log"
+with open(_LOG, "w") as f:
     f.writelines(satirlar)
 
 print("network.log oluşturuldu")

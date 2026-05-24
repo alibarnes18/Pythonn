@@ -1,4 +1,7 @@
 import hashlib
+from pathlib import Path
+
+_WORDLIST = Path(__file__).resolve().parent.parent / "data" / "wordlists" / "wordlist.txt"
 
 def hash_kirici(hedef_hash, wordlist_dosya, algoritma="md5"):
 
@@ -28,11 +31,5 @@ def hash_kirici(hedef_hash, wordlist_dosya, algoritma="md5"):
         return None
 
 
-
-hash_kirici("482c811da5d5b4bc6d497ffa98491e38", "wordlist.txt", "md5")
-
-hash_kirici(
-    "cbfdac6008f9cab4083784cbd1874f76618d2a97",
-    "wordlist.txt",
-    "sha1"
-)
+hash_kirici("482c811da5d5b4bc6d497ffa98491e38", str(_WORDLIST), "md5")
+hash_kirici("cbfdac6008f9cab4083784cbd1874f76618d2a97", str(_WORDLIST), "sha1")

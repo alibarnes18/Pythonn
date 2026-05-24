@@ -17,7 +17,10 @@ satirlar = [
 error_ips = []
 
 
-with open("access.log", "r") as f:
+from pathlib import Path
+
+_LOG = Path(__file__).resolve().parent.parent / "03-file-handling" / "data" / "access.log"
+with open(_LOG, "r") as f:
     for line in f:
         if "ERROR" in line :
             match = re.search(r"\d+\.\d+\.\d+\.\d+", line)
