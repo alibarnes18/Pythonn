@@ -1,0 +1,4 @@
+[!] XSS bulundu: <script>alert('XSS')</script>
+[!] XSS bulundu: <img src=x onerror=alert(1)>
+[!] XSS bulundu: <body onload=alert('XSS')>
+[+] Temiz: normal yorum
